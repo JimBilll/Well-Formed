@@ -1,5 +1,8 @@
-import textField from "./field_types/textField.js";
+import Form from "./form.js";
+import TextField from "./field_types/textField.js";
 
-var testField = new textField("test", true);
+var fields = [new TextField("First Name"), new TextField("Last Name")]
 
-console.log(testField.name + testField.required);
+var testForm = new Form(fields);
+
+console.log(testForm.generateForm());

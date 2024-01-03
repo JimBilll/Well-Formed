@@ -7,5 +7,6 @@ export default class TextField {
 
     generateField(){
         // TODO complete generateField method
+        return this.name + "PLACEHOLDER"
     }
 }
