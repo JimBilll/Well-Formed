@@ -12,10 +12,10 @@ export default class TextField {
         newField += '<label for="' + this.name + '">' + this.name + '</label>';
 
         if (this.required) {
-            newField +='\n\t<input type="text" id="' + this.name + '" name="' + this.name + '" required>'
+            newField +='\n\t<input type="text" id="' + this.name + '" name="' + this.name + '" required>';
         }
         else {
-            newField +='\n\t<input type="text" id="' + this.name + '" name="' + this.name + '">'
+            newField +='\n\t<input type="text" id="' + this.name + '" name="' + this.name + '">';
         }
 
         return newField;

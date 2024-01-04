@@ -7,5 +7,17 @@ export default class EmailField {
 
     generateField(){
         // TODO complete generateField method
+        var newField = "";
+        
+        newField += '<label for="' + this.name + '">' + this.name + '</label>';
+
+        if (this.required) {
+            newField +='\n\t<input type="email" id="' + this.name + '" name="' + this.name +'" required>';
+        }
+        else {
+            newField +='\n\t<input type="email" id="' + this.name + '" name="' + this.name + '">';
+        }
+
+        return newField;
     }
 }

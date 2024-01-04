@@ -1,8 +1,9 @@
 import Form from "../form.js";
 import TextField from "../field_types/textField.js";
+import EmailField from "../field_types/emailField.js";
 import * as fs from 'fs';
 
-var fields = [new TextField("First Name", true), new TextField("Last Name", false)];
+var fields = [new TextField("First Name", true), new TextField("Last Name", false), new EmailField("Email Address", true)];
 
 var testForm = new Form(fields);
 

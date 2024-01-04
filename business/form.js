@@ -9,7 +9,7 @@ export default class Form {
     generateForm() {
         // TODO - complete generateForm method
         this.generateContent();
-        return "<form>\n" + this.content + "</form>";
+        return "<form>\n" + this.content + '\t<input type="submit">\n</form>';
     }
 
     // Generate the HTML strings for each field
