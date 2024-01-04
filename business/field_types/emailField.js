@@ -1,8 +1,8 @@
 export default class EmailField {
     constructor(fieldName, isRequired){
         // TODO - complete constructor method
-        this.name = fieldName
-        this.required = isRequired
+        this.name = fieldName;
+        this.required = isRequired;
     }
 
     generateField(){
