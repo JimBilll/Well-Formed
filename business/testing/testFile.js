@@ -23,7 +23,7 @@ console.log(testString);
 
 var testSite = "business/testing/testsite.html"
 
-fs.writeFile(testSite, "<html><body>" + testString + "</body></html>", function(err) {
+fs.writeFile(testSite, '<html><head><link rel="stylesheet" href="teststyles.css"></head><body>' + testString + '</body></html>', function(err) {
     if(err) {
         return console.log(err);
     }

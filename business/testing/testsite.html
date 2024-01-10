@@ -1,31 +1,31 @@
-<html><body><form>
-	<label for="First Name">First Name</label>
-	<input type="text" id="First Name" name="First Name" required>
+<html><head><link rel="stylesheet" href="teststyles.css"></head><body><form>
+	<label for="First Name">First Name</label><span class="asterisk">*</span>
+	<input type="text" id="First Name" name="First Name" required><br><br>
 	<label for="Last Name">Last Name</label>
-	<input type="text" id="Last Name" name="Last Name">
-	<label for="Email Address">Email Address</label>
-	<input type="email" id="Email Address" name="Email Address" required>
-	<label for="Date of Birth">Date of Birth</label>
-	<input type="date" id="Date of Birth" name="Date of Birth" required>
-	<label>Residence</label>
-	<label for="Address Line 1">Address Line 1</label>
-	<input type="text" id="Address Line 1" name="Address Line 1" aria-label="Residence Address Line "1 >
-	<label for="Address Line 2">Address Line 2</label>
-	<input type="text" id="Address Line 2" name="Address Line 2" aria-label="Residence Address Line "2 >
-	<label for="Address Line 3">Address Line 3</label>
-	<input type="text" id="Address Line 3" name="Address Line 3" aria-label="Residence Address Line "3 >
-	<label for="Preferred colour">Preferred colour</label>
+	<input type="text" id="Last Name" name="Last Name"><br><br>
+	<label for="Email Address">Email Address</label><span class="asterisk">*</span>
+	<input type="email" id="Email Address" name="Email Address" required><br><br>
+	<label for="Date of Birth">Date of Birth</label><span class="asterisk">*</span>
+	<input type="date" id="Date of Birth" name="Date of Birth" required><br><br>
+	<label>Residence</label><br>
+	<label for="Address Line 1" class="address-line">Address Line 1</label>
+	<input type="text" id="Address Line 1" name="Address Line 1" aria-label="Residence Address Line "1 ><br>
+	<label for="Address Line 2" class="address-line">Address Line 2</label>
+	<input type="text" id="Address Line 2" name="Address Line 2" aria-label="Residence Address Line "2 ><br>
+	<label for="Address Line 3" class="address-line">Address Line 3</label>
+	<input type="text" id="Address Line 3" name="Address Line 3" aria-label="Residence Address Line "3 ><br><br>
+	<label for="Preferred colour">Preferred colour</label><span class="asterisk">*</span>
 	<select id="Preferred colour" name="Preferred colour" required>
 		<option value="red">red</option>
 		<option value="blue">blue</option>
 		<option value="green">green</option>
-	</select>
-	<label>Pick One</label>
+	</select><br><br>
+	<label>Pick One</label><span class="asterisk">*</span>
 	<input type="radio" id="Option 1" name="Pick One" required>
-	<label for="Option 1">Option 1</label>
+	<label for="Option 1" class="radio-option">Option 1</label>
 	<input type="radio" id="Option 2" name="Pick One" required>
-	<label for="Option 2">Option 2</label>
+	<label for="Option 2" class="radio-option">Option 2</label>
 	<input type="radio" id="Option 3" name="Pick One" required>
-	<label for="Option 3">Option 3</label>
+	<label for="Option 3" class="radio-option">Option 3</label><br><br>
 	<input type="submit">
 </form></body></html>
