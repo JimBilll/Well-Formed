@@ -1,16 +1,18 @@
 import TextField from "form-generator/field_types/textField";
 
 export default function TextFieldInput(id, data, setData) {
-    
+
     return (
-        <div>
+        <div id={"fieldInput" + id}>
             <h3>Text Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"textInputName" + id} onChange={e => updateData(e)}></input>
             <label>Required: </label>
             <input type="checkbox" id={"textInputRequired" + id} onChange={e => updateData(e)}></input>
+            <button type="button" onClick={() => deleteField()}>Delete</button>
         </div>
     );
+
     function updateData(e) {
         var newData = data;
         var name = document.getElementById("textInputName" + id).value;
@@ -18,5 +20,14 @@ export default function TextFieldInput(id, data, setData) {
         
         data[id] = new TextField(name, required);
         setData(newData);
+    }
+
+    function deleteField() {
+        var newData = data;
+        data[id] = null;
+        setData(newData);
+
+        var element = document.getElementById("fieldInput" + id);
+        element.remove();
     }
 }

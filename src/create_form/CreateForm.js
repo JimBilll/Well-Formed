@@ -11,10 +11,11 @@ export default function CreateForm() {
         <form>
             {formFields}
             <button type="button" onClick={()=>{addField()}}>Add Field</button>
-            <button type="button" onClick={()=>{console.log(data)}}>state</button>
+            <button type="button" onClick={()=>{console.log(data); console.log(formFields)}}>state</button>
             <button type="button" onClick={()=>{generateForm()}}>Create Form</button>
         </form>
     );
+
     function addField() {
         setFormFields([...formFields, TextFieldInput(id, data, setData)]);
         setId(id + 1);

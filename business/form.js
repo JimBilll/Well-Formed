@@ -18,7 +18,9 @@ export default class Form {
 
         // For each field, generate string and add to content
         this.fields.forEach(element => {
-            this.content += "\t" + element.generateField() + "<br><br>\n";
+            if (element) {
+                this.content += "\t" + element.generateField() + "<br><br>\n";
+            }
         });
     }
 }
