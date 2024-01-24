@@ -4,7 +4,7 @@ import CreateForm from './create_form/CreateForm';
 function App() {
   return (
     <div className="App">
-      <div className="App-nav">
+      <div className="App-nav" style={{ userSelect: "none" }}>
         <h1>Good Form</h1>
         <p>ACCESSIBLE WEBFORMS AT YOUR FINGERTIPS</p>
       </div>
