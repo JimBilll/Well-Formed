@@ -4,6 +4,7 @@ import DateFieldInput from "./field_inputs/DateFieldInput.js";
 import AddressFieldInput from "./field_inputs/AddressFieldInput.js";
 import { useState } from 'react';
 import generate from "./Generate.js";
+import DropdownFieldInput from "./field_inputs/DropdownFieldInput.js";
 
 export default function CreateForm() {
     const [formFields, setFormFields] = useState([]);
@@ -17,6 +18,7 @@ export default function CreateForm() {
             <button type="button" onClick={()=>{addField(EmailFieldInput)}}>Add Email Field</button>
             <button type="button" onClick={()=>{addField(DateFieldInput)}}>Add Date Field</button>
             <button type="button" onClick={()=>{addField(AddressFieldInput)}}>Add Address Field</button>
+            <button type="button" onClick={()=>{addField(DropdownFieldInput)}}>Add Dropdown Field</button>
             <button type="button" onClick={()=>{console.log(data); console.log(formFields)}}>state</button>
             <button type="button" onClick={()=>{generateForm()}}>Create Form</button>
         </form>
