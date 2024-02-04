@@ -32,6 +32,13 @@ export default function CreateForm() {
     }
 
     function generateForm() {
-        console.log(generate(data));
+        var newForm = generate(data);
+        var resultField = document.getElementById("resultField");
+        var previewField = document.getElementById("previewField");
+
+        resultField.innerText = newForm;
+        previewField.innerHTML = newForm.replace('<input type="submit">', '');
+
+        console.log(newForm);
     }
 }

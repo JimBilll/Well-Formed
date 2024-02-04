@@ -1,5 +1,6 @@
 import './App.css';
 import CreateForm from './create_form/CreateForm';
+import Result from './create_form/Result';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className="App-header">
         <CreateForm />
       </header>
+      <Result />
     </div>
   );
 }
