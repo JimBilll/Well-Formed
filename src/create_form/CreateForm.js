@@ -20,7 +20,7 @@ export default function CreateForm() {
             <button type="button" onClick={()=>{addField(DateFieldInput)}}>Add Date Field</button>
             <button type="button" onClick={()=>{addField(AddressFieldInput)}}>Add Address Field</button>
             <button type="button" onClick={()=>{addField(DropdownFieldInput)}}>Add Dropdown Field</button>
-            <button type="button" onClick={()=>{addField(RadioFieldInput)}}>Add Dropdown Field</button>
+            <button type="button" onClick={()=>{addField(RadioFieldInput)}}>Add Radio Field</button>
             <button type="button" onClick={()=>{console.log(data); console.log(formFields)}}>state</button>
             <button type="button" onClick={()=>{generateForm()}}>Create Form</button>
         </form>
