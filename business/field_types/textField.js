@@ -12,10 +12,10 @@ export default class TextField {
         newField += '<label class="gf-label" for="' + this.name + '">' + this.name + '</label>';
 
         if (this.required) {
-            newField +='<span class="asterisk">*</span>\n\t<input type="text" id="' + this.name + '" name="' + this.name + '" required>';
+            newField +='<span class="asterisk">*</span>\n\t<input type="text" id="' + this.name + '" class="gf-text-input" name="' + this.name + '" required>';
         }
         else {
-            newField +='\n\t<input type="text" id="' + this.name + '" name="' + this.name + '">';
+            newField +='\n\t<input type="text" id="' + this.name + '" class="gf-text-input" name="' + this.name + '">';
         }
 
         return newField;

@@ -3,7 +3,7 @@ import RadioField from "form-generator/field_types/radioField"
 export default function RadioFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Radio Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"radioInputName" + id} onChange={e => updateData(e)}></input>

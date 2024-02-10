@@ -15,10 +15,10 @@ export default class AddressField {
             newField += '\n\t<label for="Address Line ' + i + '" class="address-line">Address Line ' + i + '</label>';
             
             if (this.required) {
-                newField +='<span class="asterisk">*</span>\n\t<input type="text" id="Address Line ' + i + '" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' required><br>';
+                newField +='<span class="asterisk">*</span>\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' required><br>';
             }
             else {
-                newField +='\n\t<input type="text" id="Address Line ' + i + '" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' ><br>';
+                newField +='\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' ><br>';
             }
         }
 

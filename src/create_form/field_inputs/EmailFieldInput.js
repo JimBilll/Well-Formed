@@ -3,7 +3,7 @@ import EmailField from "form-generator/field_types/emailField";
 export default function EmailFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Email Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"emailInputName" + id} onChange={e => updateData(e)}></input>

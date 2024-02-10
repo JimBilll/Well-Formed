@@ -3,7 +3,7 @@ import DateField from "form-generator/field_types/dateField";
 export default function DateFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Date Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"dateInputName" + id} onChange={e => updateData(e)}></input>

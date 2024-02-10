@@ -3,7 +3,7 @@ import AddressField from "form-generator/field_types/addressField";
 export default function AddressFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Address Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"addressInputName" + id} onChange={e => updateData(e)}></input>

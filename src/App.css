@@ -35,6 +35,21 @@
   color: white;
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+.fieldInput {
+  animation-name: slideDown;
+  animation-duration: 2s;
+}
+
 .result {
   background-color: #282c34;
   min-height: 70vh;

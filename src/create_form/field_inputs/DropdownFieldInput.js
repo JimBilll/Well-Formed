@@ -3,7 +3,7 @@ import DropdownField from "form-generator/field_types/dropdownField";
 export default function DropdownFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Dropdown Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"dropdownInputName" + id} onChange={e => updateData(e)}></input>

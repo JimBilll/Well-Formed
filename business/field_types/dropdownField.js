@@ -13,12 +13,12 @@ export default class DropdownField {
         newField += '<label class="gf-label" for="' + this.name + '">' + this.name + '</label>';
 
         if (this.required) {
-            newField += '<span class="asterisk">*</span>\n\t<select id="' + this.name + '" name="' + this.name + '" required>';
+            newField += '<span class="asterisk">*</span>\n\t<select id="' + this.name + '" class="gf-dd-select" name="' + this.name + '" required>';
             newField += this.generateOptions();
             newField += '\n\t</select>'
         }
         else {
-            newField += '\n\t<select id="' + this.name + '" name="' + this.name + '">';
+            newField += '\n\t<select id="' + this.name + '" class="gf-dd-select" name="' + this.name + '">';
             newField += this.generateOptions();
             newField += '\n\t</select>'
         }

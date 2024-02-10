@@ -17,10 +17,10 @@ export default class RadioField{
 
         for (var i = 0; i < this.options.length; i++) {
             if (this.required) {
-                newField +='\n\t<input type="radio" id="' + this.options[i] + '" name="' + this.name + '" required>';
+                newField +='\n\t<input type="radio" id="' + this.options[i] + '" class="gf-radio" name="' + this.name + '" required>';
             }
             else {
-                newField +='\n\t<input type="radio" id="' + this.options[i] + '" name="' + this.name + '">';
+                newField +='\n\t<input type="radio" id="' + this.options[i] + '" class="gf-radio" name="' + this.name + '">';
             }
             newField += '\n\t<label for="' + this.options[i] + '" class="radio-option">' + this.options[i] + '</label>';
         }

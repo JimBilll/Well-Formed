@@ -3,7 +3,7 @@ import TextField from "form-generator/field_types/textField";
 export default function TextFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id}>
+        <div id={"fieldInput" + id} class="fieldInput">
             <h3>Text Input</h3>
             <label>Field Name: </label>
             <input type="text" id={"textInputName" + id} onChange={e => updateData(e)}></input>
