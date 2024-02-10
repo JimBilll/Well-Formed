@@ -9,7 +9,7 @@ export default class RadioField{
     generateField(){
         // TODO complete generateField method
         var newField = "";
-        newField += '<label>' + this.name + '</label>';
+        newField += '<label class="gf-label">' + this.name + '</label>';
 
         if(this.required){
             newField += '<span class="asterisk">*</span>';

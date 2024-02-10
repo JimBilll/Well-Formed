@@ -10,7 +10,7 @@ export default class DropdownField {
         // TODO complete generateField method
         var newField = "";
         
-        newField += '<label for="' + this.name + '">' + this.name + '</label>';
+        newField += '<label class="gf-label" for="' + this.name + '">' + this.name + '</label>';
 
         if (this.required) {
             newField += '<span class="asterisk">*</span>\n\t<select id="' + this.name + '" name="' + this.name + '" required>';

@@ -9,7 +9,7 @@ export default class AddressField {
     generateField() {
         // TODO complete generateField method
         var newField = "";
-        newField += '<label>' + this.name + '</label><br>';
+        newField += '<label class="gf-label">' + this.name + '</label><br>';
 
         for (var i = 1; i <= this.lines; i++) {
             newField += '\n\t<label for="Address Line ' + i + '" class="address-line">Address Line ' + i + '</label>';
