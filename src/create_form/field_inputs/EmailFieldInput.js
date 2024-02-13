@@ -9,7 +9,7 @@ export default function EmailFieldInput(id, data, setData) {
             <input type="text" id={"emailInputName" + id} onChange={e => updateData(e)}></input>
             <label>Required: </label>
             <input type="checkbox" id={"emailInputRequired" + id} onChange={e => updateData(e)}></input>
-            <button type="button" onClick={() => deleteField()}>Delete</button>
+            <button type="button" className="deleteButton" title="Delete Field" onClick={() => deleteField()}><img src="form_icons/deleteIcon.png" alt="DeleteField" className="deleteButtonImage"></img></button>
         </div>
     );
 

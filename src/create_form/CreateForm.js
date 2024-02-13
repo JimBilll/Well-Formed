@@ -15,13 +15,16 @@ export default function CreateForm() {
     return (
         <form>
             {formFields}
-            <button type="button" className="fieldButton" title="Add Text Field" onClick={()=>{addField(TextFieldInput)}}><img src="form_icons/textIcon.png" alt="Add Text Field" className="fieldButtonImage"></img></button>
-            <button type="button" className="fieldButton" title="Add Email Field" onClick={()=>{addField(EmailFieldInput)}}><img src="form_icons/emailIcon.png" alt="Add Email Field" className="fieldButtonImage"></img></button>
-            <button type="button" className="fieldButton" title="Add Date Field" onClick={()=>{addField(DateFieldInput)}}><img src="form_icons/dateIcon.png" alt="Add Date Field" className="fieldButtonImage"></img></button>
-            <button type="button" className="fieldButton" title="Add Address Field" onClick={()=>{addField(AddressFieldInput)}}><img src="form_icons/addressIcon.png" alt="Add Address Field" className="fieldButtonImage"></img></button>
-            <button type="button" className="fieldButton" title="Add Dropdown Field" onClick={()=>{addField(DropdownFieldInput)}}><img src="form_icons/dropdownIcon.png" alt="Add Dropdown Field" className="fieldButtonImage"></img></button>
-            <button type="button" className="fieldButton" title="Add Radio Field" onClick={()=>{addField(RadioFieldInput)}}><img src="form_icons/radioIcon.png" alt="Add Radio Field" className="fieldButtonImage"></img></button>
-            <button type="button" onClick={()=>{generateForm()}}>Create Form</button>
+            <h3 id="addFieldsTitle">Add Field</h3>
+            <div id="addFieldButtons">
+                <button type="button" className="fieldButton" title="Add Text Field" onClick={()=>{addField(TextFieldInput)}}><img src="form_icons/textIcon.png" alt="Add Text Field" className="fieldButtonImage"></img></button>
+                <button type="button" className="fieldButton" title="Add Email Field" onClick={()=>{addField(EmailFieldInput)}}><img src="form_icons/emailIcon.png" alt="Add Email Field" className="fieldButtonImage"></img></button>
+                <button type="button" className="fieldButton" title="Add Date Field" onClick={()=>{addField(DateFieldInput)}}><img src="form_icons/dateIcon.png" alt="Add Date Field" className="fieldButtonImage"></img></button>
+                <button type="button" className="fieldButton" title="Add Address Field" onClick={()=>{addField(AddressFieldInput)}}><img src="form_icons/addressIcon.png" alt="Add Address Field" className="fieldButtonImage"></img></button>
+                <button type="button" className="fieldButton" title="Add Dropdown Field" onClick={()=>{addField(DropdownFieldInput)}}><img src="form_icons/dropdownIcon.png" alt="Add Dropdown Field" className="fieldButtonImage"></img></button>
+                <button type="button" className="fieldButton" title="Add Radio Field" onClick={()=>{addField(RadioFieldInput)}}><img src="form_icons/radioIcon.png" alt="Add Radio Field" className="fieldButtonImage"></img></button>
+            </div>
+            <button type="button" id="createFormButton" onClick={()=>{generateForm()}}>Create Form</button>
         </form>
     );
 
