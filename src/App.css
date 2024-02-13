@@ -122,3 +122,20 @@
   padding: 10px;
   min-width: 400px;
 }
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.App-footer p {
+  padding: 5px;
+  margin: 0px;
+  margin-block-end: 0px;
+}

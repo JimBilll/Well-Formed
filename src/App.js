@@ -13,6 +13,10 @@ function App() {
         <CreateForm />
       </header>
       <Result />
+      <footer className="App-footer">
+        <p>© James McLean 2024</p>
+        <p>All rights reserved.</p>
+      </footer>
     </div>
   );
 }
