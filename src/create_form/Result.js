@@ -21,14 +21,14 @@ export default function Result() {
             <div>
                 <h2>Result</h2>
                 <div id="resultField"></div>
-                <button type="button" onClick={() => copyContent()}>Copy to Clipboard</button>
+                <button type="button" id="copyButton" onClick={() => copyContent()}>Copy to Clipboard</button>
             </div>
             <div>
                 <head>
                     <link rel="stylesheet" href={style}></link>
                 </head>
                 <h2>Preview</h2>
-                <label>CSS:</label>
+                <label>Style:</label>
                 <input type="radio" id="simpleCSS" name="selectCSS" checked onClick={() => setCSS(true)}/>
                 <label for="simpleCSS">Simple</label>
                 <input type="radio" id="cleanCSS" name="selectCSS" onClick={() => setCSS(false)}/>

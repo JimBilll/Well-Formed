@@ -5,9 +5,17 @@ import Result from './create_form/Result';
 function App() {
   return (
     <div className="App">
-      <div className="App-nav" style={{ userSelect: "none" }}>
-        <h1>Good Form</h1>
-        <p>ACCESSIBLE WEBFORMS AT YOUR FINGERTIPS</p>
+      <div className="App-nav">
+        <div className="App-logo" style={{ userSelect: "none" }}>
+          <h1>Well Formed</h1>
+          <p>ACCESSIBLE WEBFORMS AT YOUR FINGERTIPS</p>
+        </div>
+        <a href="https://jmcl.xyz" className='creatorLink' target="none">
+          <div className="App-creator">
+            <p>Created by James McLean</p>
+            <img src="other_assets/fritz.jpg" alt="James McLean Website"></img>
+          </div>
+        </a>
       </div>
       <header className="App-header">
         <CreateForm />

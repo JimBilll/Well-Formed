@@ -5,6 +5,14 @@
 .App-nav {
   background-color: #282c34;
   min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.App-logo {
+  min-height: 10vh;
   padding-left: 5vw;
   display: flex;
   flex-direction: column;
@@ -15,13 +23,37 @@
   color: white;
 }
 
-.App-nav h1 {
+.App-logo h1 {
   margin-block-end: 0px;
 }
 
-.App-nav p {
+.App-logo p {
   margin: 0px;
-  font-size: calc(5.5px + 1vmin);
+  font-size: calc(7px + 1vmin);
+}
+
+.creatorLink {
+  text-decoration: none;
+}
+
+.App-creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.App-creator p {
+  max-width: 120px;
+  margin-right: 10px;
+  text-align: right;
+  color: white
+}
+
+.App-creator img {
+  width: 60px;
+  height: 60px;
 }
 
 .App-header {
@@ -95,6 +127,13 @@
   color: #282c34;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+#createFormButton:hover {
+  background-color: #282c34;
+  border: 1px solid white;
+  color: white;
 }
 
 .result {
@@ -115,12 +154,32 @@
   text-align: left;
 }
 
+#copyButton {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #282c34;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#copyButton:hover {
+  background-color: #282c34;
+  border: 1px solid white;
+  color: white;
+}
+
 #previewField {
   background-color: white;
   color: black;
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
   min-width: 400px;
+  border-radius: 8px;
 }
 
 .App-footer {
