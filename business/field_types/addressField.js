@@ -16,6 +16,7 @@ export default class AddressField {
             
             if (this.required) {
                 newField +='<span class="asterisk">*</span>\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' required><br>';
+                if (i == 2) { this.required = false };
             }
             else {
                 newField +='\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line "' + i + ' ><br>';
