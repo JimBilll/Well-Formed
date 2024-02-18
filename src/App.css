@@ -182,6 +182,13 @@
   border-radius: 8px;
 }
 
+#downloadButton {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
 .App-footer {
   background-color: #282c34;
   min-height: 12vh;

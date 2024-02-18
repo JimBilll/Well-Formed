@@ -1,5 +1,10 @@
+.wf-form {
+    background-color: white;
+}
+
 .gf-label {
     margin-right: 10px;
+    color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

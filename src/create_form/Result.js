@@ -28,19 +28,16 @@ export default function Result() {
                     <link rel="stylesheet" href={style}></link>
                 </head>
                 <h2>Preview</h2>
-                <label>Style:</label>
-                <input type="radio" id="simpleCSS" name="selectCSS" checked onClick={() => setCSS(true)}/>
+                <label>Theme:</label>
+                <input type="radio" id="simpleCSS" name="selectCSS" onClick={() => setCSS(true)}/>
                 <label for="simpleCSS">Simple</label>
                 <input type="radio" id="cleanCSS" name="selectCSS" onClick={() => setCSS(false)}/>
                 <label for="cleanCSS">Clean</label>
-                <select id="cssColour" name="colour" disabled={simple}>
-                    <option value="White">White</option>
-                    <option value="Black">Black</option>
-                    <option value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
+                <select id="cssColour" name="colour" disabled={simple} onChange={() => setCSS(false)}>
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
                 </select>
+                <a href={style} download><img src="other_assets/download.png" id="downloadButton" alt="download"></img></a>
                 <div id="previewField"></div>
             </div>
         </div>
@@ -52,7 +49,8 @@ export default function Result() {
             setStyle("form_styles/simple.css");
         }
         else {
-            setStyle("form_styles/clean.css");
+            var theme = document.getElementById("cssColour");
+            setStyle("form_styles/" + theme.value + "-clean.css");
         }
     }
 }

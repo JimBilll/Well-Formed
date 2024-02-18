@@ -1,0 +1,50 @@
+.wf-form {
+    background-color: #282c34;
+}
+
+.gf-label {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.asterisk {
+    margin-left: -10px;
+    margin-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(162, 34, 34);
+}
+
+.address-line, .radio-option {
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gf-text-input {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gf-dd-select {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gf-radio {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+}
+
+.gf-radio:checked {
+    border: 6px solid rgb(60, 60, 247);
+}
