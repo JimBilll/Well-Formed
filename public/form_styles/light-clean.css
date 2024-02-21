@@ -9,16 +9,36 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.gf-radio-label {
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -14px;
+}
+
 .asterisk {
     margin-left: -10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(162, 34, 34);
 }
 
+.radio-asterisk {
+    font-weight: 100;
+    color:rgb(162, 34, 34);
+}
+
 .address-line, .radio-option {
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 10px;
+}
+
+.address-line {
+    margin-right: 10px;
+}
+
+.gf-radio-field {
+    border: 0px;
 }
 
 .gf-text-input {

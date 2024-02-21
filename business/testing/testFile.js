@@ -11,7 +11,7 @@ var fields = [new TextField("First Name", true),
               new TextField("Last Name", false),
               new EmailField("Email Address", true),
               new DateField("Date of Birth", true),
-              new AddressField("Residence", 3, false),
+              new AddressField("Residence", 3, true),
               new DropdownField("Preferred colour", ["red", "blue", "green"], true),
               new RadioField("Pick One", ["Option 1", "Option 2", "Option 3"], true)];
 

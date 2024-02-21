@@ -1,14 +1,32 @@
-label {
+.gf-label {
     margin-right: 10px;
     font-weight: bold;
 }
 
+.gf-radio-label {
+    font-weight: bold;
+    margin-left: -14px;
+}
+
 .asterisk {
     margin-left: -10px;
-    margin-right: 10px;
+    margin-right: 2px;
     color: red;
+}
+
+.radio-asterisk {
+    font-weight: 100;
+    color:red;
 }
 
 .address-line, .radio-option {
     font-weight: normal;
+}
+
+.address-line {
+    margin-right: 10px;
+}
+
+.gf-radio-field {
+    border: 0px;
 }
