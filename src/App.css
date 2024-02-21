@@ -173,6 +173,34 @@
   color: white;
 }
 
+#style-menu {
+  display: flex;
+  flex-direction: row;
+  vertical-align: centre;
+  height: 40px;
+  margin-left: 30px;
+}
+
+.style-radio {
+  border: 0px;
+  width: 180px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.style-radio legend {
+  font-size: 0px;
+}
+
+#cssColour {
+  height: 20px;
+  margin-top: 10px;
+  margin-right:10px;
+  border: none;
+  border-radius: 6px;
+}
+
 #previewField {
   background-color: white;
   color: black;

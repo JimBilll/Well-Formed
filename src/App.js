@@ -17,9 +17,9 @@ function App() {
           </div>
         </a>
       </div>
-      <header className="App-header">
+      <div className="App-header">
         <CreateForm />
-      </header>
+      </div>
       <Result />
       <footer className="App-footer">
         <p>© James McLean 2024</p>

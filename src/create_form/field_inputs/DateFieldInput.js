@@ -3,15 +3,19 @@ import DateField from "form-generator/field_types/dateField";
 export default function DateFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id} class="fieldInput">
-            <h3>Date Input</h3>
+        <div id={"fieldInput" + id} className="fieldInput" onLoad={e => setFocus(e)}>
+            <h3>Date Field</h3>
             <label>Field Name: </label>
-            <input type="text" id={"dateInputName" + id} onChange={e => updateData(e)}></input>
-            <label>Required: </label>
+            <input type="text" id={"dateInputName" + id} aria-label="Date Field Name" onChange={e => updateData(e)} autoComplete="off"></input>
+            <label for={"dateInputRequired" + id}>Required: </label>
             <input type="checkbox" id={"dateInputRequired" + id} onChange={e => updateData(e)}></input>
-            <button type="button" className="deleteButton" title="Delete Field" onClick={() => deleteField()}><img src="form_icons/deleteIcon.png" alt="DeleteField" className="deleteButtonImage"></img></button>
+            <button type="button" className="deleteButton" title="Delete Field" onClick={() => deleteField()}><img src="form_icons/deleteIcon.png" alt="DeleteField" className="deleteButtonImage" aria-hidden></img></button>
         </div>
     );
+
+    function setFocus(e) {
+        document.getElementById("dateInputName" + id).focus();
+    }
 
     function updateData(e) {
         var newData = data;

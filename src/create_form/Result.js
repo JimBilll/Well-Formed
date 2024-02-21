@@ -20,7 +20,7 @@ export default function Result() {
         <div id="result" className="result">
             <div>
                 <h2>Result</h2>
-                <div id="resultField"></div>
+                <div id="resultField" tabIndex={0}></div>
                 <button type="button" id="copyButton" onClick={() => copyContent()}>Copy to Clipboard</button>
             </div>
             <div>
@@ -28,16 +28,21 @@ export default function Result() {
                     <link rel="stylesheet" href={style}></link>
                 </head>
                 <h2>Preview</h2>
-                <label>Theme:</label>
-                <input type="radio" id="simpleCSS" name="selectCSS" onClick={() => setCSS(true)}/>
-                <label for="simpleCSS">Simple</label>
-                <input type="radio" id="cleanCSS" name="selectCSS" onClick={() => setCSS(false)}/>
-                <label for="cleanCSS">Clean</label>
-                <select id="cssColour" name="colour" disabled={simple} onChange={() => setCSS(false)}>
-                    <option value="light">light</option>
-                    <option value="dark">dark</option>
-                </select>
-                <a href={style} download><img src="other_assets/download.png" id="downloadButton" alt="download"></img></a>
+                <div id="style-menu">
+                    <label>Style:</label>
+                    <fieldset className="style-radio">
+                        <legend>Style</legend>
+                        <input type="radio" id="simpleCSS" name="selectCSS" onClick={() => setCSS(true)}/>
+                        <label for="simpleCSS">Simple</label>
+                        <input type="radio" id="cleanCSS" name="selectCSS" onClick={() => setCSS(false)}/>
+                        <label for="cleanCSS">Clean</label>
+                    </fieldset>
+                    <select id="cssColour" name="colour" disabled={simple} onChange={() => setCSS(false)} aria-label="Select Theme">
+                        <option value="light">light</option>
+                        <option value="dark">dark</option>
+                    </select>
+                    <a href={style} aria-label="Download Style-sheet" download><img src="other_assets/download.png" id="downloadButton" alt="download stylesheet" aria-hidden></img></a>
+                </div>
                 <div id="previewField"></div>
             </div>
         </div>

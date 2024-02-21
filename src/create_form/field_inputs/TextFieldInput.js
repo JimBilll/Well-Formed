@@ -3,15 +3,19 @@ import TextField from "form-generator/field_types/textField";
 export default function TextFieldInput(id, data, setData) {
 
     return (
-        <div id={"fieldInput" + id} class="fieldInput">
-            <h3>Text Input</h3>
+        <div id={"fieldInput" + id} className="fieldInput" onLoad={e => setFocus(e)}>
+            <h3>Text Field</h3>
             <label>Field Name: </label>
-            <input type="text" id={"textInputName" + id} onChange={e => updateData(e)}></input>
-            <label>Required: </label>
+            <input type="text" id={"textInputName" + id} aria-label="Text Field Name" onChange={e => updateData(e)} autoComplete="off"></input>
+            <label for={"textInputRequired" + id}>Required: </label>
             <input type="checkbox" id={"textInputRequired" + id} onChange={e => updateData(e)}></input>
-            <button type="button" className="deleteButton" title="Delete Field" onClick={() => deleteField()}><img src="form_icons/deleteIcon.png" alt="DeleteField" className="deleteButtonImage"></img></button>
+            <button type="button" className="deleteButton" title="Delete Field" onClick={() => deleteField()}><img src="form_icons/deleteIcon.png" alt="DeleteField" className="deleteButtonImage" aria-hidden></img></button>
         </div>
     );
+
+    function setFocus(e) {
+        document.getElementById("textInputName" + id).focus();
+    }
 
     function updateData(e) {
         var newData = data;
