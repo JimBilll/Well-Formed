@@ -83,8 +83,47 @@
   margin-bottom: 30px;
 }
 
-.deleteButton {
+.field-edit-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.field-edit-inputs {
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.text-input label {
+  margin-right: 21px;
+}
+
+.text-input input {
   border: 0px;
+  border-radius: 5px;
+  width: 150px;
+  height: 22px
+}
+
+.text-area-input textarea {
+  vertical-align: top;
+  margin-top: 5px;
+  resize: none;
+  width: 150px;
+  height: 75px;
+  border: 0px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.required-input label {
+  margin-right: 41px;
+}
+
+.deleteButton {
+  height: 30px;
+  border: 0px;
+  margin-top: 8px;
   cursor: pointer;
   appearance: none;
   background-color: inherit;
