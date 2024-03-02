@@ -1,17 +1,17 @@
 export default class DropdownField {
     constructor(fieldName, selectOptions, isRequired){
-        // TODO - complete constructor method
         this.name = fieldName;
         this.options = selectOptions;
         this.required = isRequired;
     }
 
     generateField(){
-        // TODO complete generateField method
         var newField = "";
         
+        // Create Label
         newField += '<label class="gf-label" for="' + this.name + '">' + this.name + '</label>';
 
+        // Add required asterisk and call options generation
         if (this.required) {
             newField += '<span class="asterisk">*</span>\n\t<select id="' + this.name + '" class="gf-dd-select" name="' + this.name + '" required>';
             newField += this.generateOptions();
@@ -26,6 +26,7 @@ export default class DropdownField {
         return newField;
     }
 
+    // Add option elements for each selection option
     generateOptions(){
         var HTMLoptions = "";
 

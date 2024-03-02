@@ -21,6 +21,7 @@ var testString = testForm.generateForm();
 
 console.log(testString);
 
+// Write generated form element string to testsite.html
 var testSite = "business/testing/testsite.html"
 
 fs.writeFile(testSite, '<html><head><link rel="stylesheet" href="teststyles.css"></head><body>' + testString + '</body></html>', function(err) {

@@ -26,10 +26,12 @@ export default function AddressFieldInput(id, data, setData) {
         </div>
     );
 
+    // Set the focus to the name input when created
     function setFocus(e) {
         document.getElementById("addressInputName" + id).focus();
     }
 
+    // Update the stored form data
     function updateData(e) {
         var newData = data;
         var name = document.getElementById("addressInputName" + id).value;

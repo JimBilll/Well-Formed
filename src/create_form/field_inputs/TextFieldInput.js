@@ -21,10 +21,12 @@ export default function TextFieldInput(id, data, setData) {
         </div>
     );
 
+    // Set the focus to the name input when created
     function setFocus(e) {
         document.getElementById("textInputName" + id).focus();
     }
 
+    // Update the stored form data
     function updateData(e) {
         var newData = data;
         var name = document.getElementById("textInputName" + id).value;

@@ -1,6 +1,5 @@
 export default class Form {
     constructor(formFields) {
-        // TODO - complete constructor
         this.fields = formFields
         this.content = "";
     }
@@ -14,8 +13,6 @@ export default class Form {
 
     // Generate the HTML strings for each field
     generateContent() {
-        // TODO - complete generateContent method
-
         // For each field, generate string and add to content
         this.fields.forEach(element => {
             if (element) {

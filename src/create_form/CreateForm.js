@@ -28,11 +28,13 @@ export default function CreateForm() {
         </form>
     );
 
+    // Create a new field element and add it to the list of fields
     function addField(FieldInputType) {
         setFormFields([...formFields, FieldInputType(id, data, setData)]);
         setId(id + 1);
     }
 
+    // Generate the form element and send it to the result and preview fields
     function generateForm() {
         var newForm = generate(data);
         var resultField = document.getElementById("resultField");

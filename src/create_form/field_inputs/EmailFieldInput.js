@@ -21,10 +21,12 @@ export default function EmailFieldInput(id, data, setData) {
         </div>
     );
 
+    // Set the focus to the name input when created
     function setFocus(e) {
         document.getElementById("emailInputName" + id).focus();
     }
 
+    // Update the stored form data
     function updateData(e) {
         //var newData = data;
         var name = document.getElementById("emailInputName" + id).value;

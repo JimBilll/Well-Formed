@@ -5,6 +5,7 @@ export default function Result() {
     const [simple, setSimple] = useState(true);
     const [style, setStyle] = useState("form_styles/simple.css");
 
+    // Copy content to user's clipboard
     const copyContent = async () => {
         try {
             var text = document.getElementById("resultField").innerText;
@@ -48,6 +49,7 @@ export default function Result() {
         </div>
     );
 
+    // Sets the CSS theme of the rendered preview
     function setCSS(isSimple) {
         setSimple(isSimple)
         if (isSimple) {
