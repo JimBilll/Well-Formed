@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-nav {
+.App-header {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
@@ -56,7 +56,7 @@
   height: 60px;
 }
 
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 70vh;
   display: flex;

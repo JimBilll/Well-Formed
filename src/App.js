@@ -5,7 +5,7 @@ import Result from './create_form/Result';
 function App() {
   return (
     <div className="App">
-      <div className="App-nav">
+      <div className="App-header">
         <div className="App-logo" style={{ userSelect: "none" }}>
           <h1>Well Formed</h1>
           <p>ACCESSIBLE WEBFORMS AT YOUR FINGERTIPS</p>
@@ -17,7 +17,7 @@ function App() {
           </div>
         </a>
       </div>
-      <div className="App-header">
+      <div className="App-body">
         <CreateForm />
       </div>
       <Result />
