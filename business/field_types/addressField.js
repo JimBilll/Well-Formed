@@ -14,14 +14,14 @@ export default class AddressField {
 
         // Create labels and input elements for each address line
         for (var i = 1; i <= this.lines; i++) {
-            newField += '\n\t<label for="Address Line ' + i + '" class="address-line">Address Line ' + i + '</label>';
+            newField += '\n\t<label for="' + this.name + ' Address Line ' + i + '" class="address-line">Address Line ' + i + '</label>';
             
             if (this.required) {
-                newField +='<span class="asterisk">*</span>\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line ' + i + '" required><br>';
+                newField +='<span class="asterisk">*</span>\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="' + this.name + ' Address Line ' + i + '" aria-label="' + this.name + ' Address Line ' + i + '" required><br>';
                 if (i == 2) { this.required = false }; // Only the first two lines should be required
             }
             else {
-                newField +='\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="Address Line ' + i + '" aria-label="' + this.name + ' Address Line ' + i + '" ><br>';
+                newField +='\n\t<input type="text" id="Address Line ' + i + '" class="gf-text-input" name="' + this.name + ' Address Line ' + i + '" aria-label="' + this.name + ' Address Line ' + i + '" ><br>';
             }
         }
 
