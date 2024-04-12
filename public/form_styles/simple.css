@@ -10,12 +10,12 @@
 
 .asterisk {
     margin-left: -10px;
-    color: red;
+    color: rgb(162, 34, 34);
 }
 
 .radio-asterisk {
     font-weight: 100;
-    color:red;
+    color:rgb(162, 34, 34);
 }
 
 .address-line, .radio-option {

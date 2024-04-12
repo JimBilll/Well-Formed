@@ -1,21 +1,35 @@
 <html><head><link rel="stylesheet" href="teststyles.css"></head><body><form class="wf-form">
+<!--  This accessible form element was created using Well Formed
+It is WCAG 2.2 compliant to AAA standard, meeting the following success criteria in particular:
+	1.3.5 - Identify Input Purpose (AA)
+	1.4.6 - Contrast Enhanced (AAA)
+	2.1.2 - No Keyboard Trap (A)
+	2.1.3 - Keyboard (No Exception) (AAA)
+	2.4.3 - Focus Order (A)
+	2.4.6 - Headings and Labels (AA)
+	2.4.7 - Focus Visible (AA)
+	2.5.3 - Label in Name (A)
+Well Formed © James McLean 2024
+All rights reserved.-->
 	<label class="gf-label" for="First Name">First Name</label><span class="asterisk">*</span>
 	<input type="text" id="First Name" class="gf-text-input" name="First Name" required><br><br>
-	<label class="gf-label" for="Last Name">Last Name</label>
-	<input type="text" id="Last Name" class="gf-text-input" name="Last Name"><br><br>
-	<label class="gf-label" for="Email Address">Email Address</label><span class="asterisk">*</span>
-	<input type="email" id="Email Address" class="gf-text-input" name="Email Address" required><br><br>
+	<label class="gf-label" for="Last Name">Last Name</label><span class="asterisk">*</span>
+	<input type="text" id="Last Name" class="gf-text-input" name="Last Name" required><br><br>
+	<label class="gf-label" for="Email Address">Email Address</label>
+	<input type="email" id="Email Address" class="gf-text-input" name="Email Address"><br><br>
 	<label class="gf-label" for="Date of Birth">Date of Birth</label><span class="asterisk">*</span>
 	<input type="date" id="Date of Birth" class="gf-text-input" name="Date of Birth" required><br><br>
 	<label class="gf-label">Residence</label><br>
-	<label for="Address Line 1" class="address-line">Address Line 1</label><span class="asterisk">*</span>
-	<input type="text" id="Address Line 1" class="gf-text-input" name="Address Line 1" aria-label="Residence Address Line 1" required><br>
-	<label for="Address Line 2" class="address-line">Address Line 2</label><span class="asterisk">*</span>
-	<input type="text" id="Address Line 2" class="gf-text-input" name="Address Line 2" aria-label="Residence Address Line 2" required><br>
-	<label for="Address Line 3" class="address-line">Address Line 3</label>
-	<input type="text" id="Address Line 3" class="gf-text-input" name="Address Line 3" aria-label="Residence Address Line 3" ><br><br>
-	<label class="gf-label" for="Preferred colour">Preferred colour</label><span class="asterisk">*</span>
-	<select id="Preferred colour" class="gf-dd-select" name="Preferred colour" required>
+	<label for="Residence Address Line 1" class="address-line">Address Line 1</label><span class="asterisk">*</span>
+	<input type="text" id="Address Line 1" class="gf-text-input" name="Residence Address Line 1" aria-label="Residence Address Line 1" required><br>
+	<label for="Residence Address Line 2" class="address-line">Address Line 2</label><span class="asterisk">*</span>
+	<input type="text" id="Address Line 2" class="gf-text-input" name="Residence Address Line 2" aria-label="Residence Address Line 2" required><br>
+	<label for="Residence Address Line 3" class="address-line">Address Line 3</label>
+	<input type="text" id="Address Line 3" class="gf-text-input" name="Residence Address Line 3" aria-label="Residence Address Line 3" ><br>
+	<label for="Residence Address Line 4" class="address-line">Address Line 4</label>
+	<input type="text" id="Address Line 4" class="gf-text-input" name="Residence Address Line 4" aria-label="Residence Address Line 4" ><br><br>
+	<label class="gf-label" for="Preferred colour">Preferred colour</label>
+	<select id="Preferred colour" class="gf-dd-select" name="Preferred colour">
 		<option value="red">red</option>
 		<option value="blue">blue</option>
 		<option value="green">green</option>

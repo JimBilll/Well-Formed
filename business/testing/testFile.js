@@ -8,11 +8,11 @@ import DropdownField from "../field_types/dropdownField.js";
 import RadioField from "../field_types/radioField.js";
 
 var fields = [new TextField("First Name", true),
-              new TextField("Last Name", false),
-              new EmailField("Email Address", true),
+              new TextField("Last Name", true),
+              new EmailField("Email Address", false),
               new DateField("Date of Birth", true),
-              new AddressField("Residence", 3, true),
-              new DropdownField("Preferred colour", ["red", "blue", "green"], true),
+              new AddressField("Residence", 4, true),
+              new DropdownField("Preferred colour", ["red", "blue", "green"], false),
               new RadioField("Pick One", ["Option 1", "Option 2", "Option 3"], true)];
 
 var testForm = new Form(fields);

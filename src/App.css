@@ -218,6 +218,7 @@
   vertical-align: centre;
   height: 40px;
   margin-left: 30px;
+  font-size: calc(7px + 2vmin);
 }
 
 .style-radio {
@@ -247,6 +248,12 @@
   text-align: left;
   padding: 10px;
   min-width: 400px;
+  border-radius: 8px;
+}
+
+.wf-form {
+  padding-top: 10px;
+  padding-left: 10px;
   border-radius: 8px;
 }
 

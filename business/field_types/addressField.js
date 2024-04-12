@@ -1,6 +1,5 @@
 export default class AddressField {
     constructor(fieldName, noOfLines, isRequired){
-        // TODO - complete constructor method
         this.name = fieldName;
         this.lines = noOfLines;
         this.required = isRequired;

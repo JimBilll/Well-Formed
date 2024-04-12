@@ -19,12 +19,12 @@
 .asterisk {
     margin-left: -10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(162, 34, 34);
+    color: rgb(217, 224, 19);
 }
 
 .radio-asterisk {
     font-weight: 100;
-    color:rgb(162, 34, 34);
+    color:rgb(217, 224, 19);
 }
 
 .address-line, .radio-option {
