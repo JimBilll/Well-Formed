@@ -4,6 +4,8 @@
 ## What is Well Formed
 Well Formed is an application for generating accessible web forms. It features an easy to use interface to design forms and produces HTML form elements ready to be dropped into your web page. These elements are WCAG AAA compliant so will be compatible with screen readers and other descriptive accessibility tools.
 
+This is my Honour's project - my final dissertation recieved a grade of 75%.
+
 ## Set up
 
 Prerequisites:
